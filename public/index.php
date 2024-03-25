@@ -423,15 +423,28 @@ echo "</br>";
 ?>
 
 
-// Display the table
-<form name="form1" method='post' action="index2.php">
-  Nome: <input type='text' name='nome'><br>
-  E-mail: <input type='email' name='email'><br>
-  Senha: <input type='password' name='senha'><br>
-  <input type='submit' value='Submit'>
-</form>
-
-<!-- <a href="index2.php">Inserir e recuperar dados no MySQL</a> -->
+<h1>Tabela Inserir Usuário</h1>
+<table border="1">
+    <tr>
+        <form method="post" action="">
+            <td>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+            </td>
+            <td>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+            </td>
+            <td>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+            </td>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+        </form>
+    </tr>
+</table>
 
 </body>
 </html>
